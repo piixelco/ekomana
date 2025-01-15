@@ -1,0 +1,78 @@
+/*Alteração de cor do botão*/ 
+.b-conhecaekomana,.b-seusdons{
+    color:#CC3636!important;
+}
+
+.home-botao-1{
+    color:#FFF3DA!important;
+}
+
+/*Ajustes responsivos*/ 
+@media screen and (min-width: 200px) and (max-width: 550px) {  
+    /* Ajuste de Cor e posição do botao*/
+    .home-botao-1{
+         color:#FFF3DA!important;
+        position:relative;
+        left: -90px!important;    
+    }
+    /*Ajuste posição texto*/
+    .coluna-texto-slide{
+        top:-20px!important;
+    
+    }
+}
+     
+     
+     @media screen and (min-width: 200px) and (max-width: 550px) {  
+    /* Ocultação imagem para desktop*/
+        .all-fundo-botao-01{
+       background-image: none!important;
+    }
+       .home-botao-1{
+        position: relative;
+        left:-150!important;
+    }
+    }
+     
+     @media screen and (min-width: 900px) and (max-width: 1024px) {  
+        .home-botao-1{
+            position: relative;
+            left:-380px!important;
+        }
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1150px) {  
+        .home-botao-1{
+            position: relative;
+            left: -376px !important;
+        }
+    }
+    @media screen and (min-width: 1151 ) and (max-width: 1250px) {  
+        .home-botao-1{
+            position: relative;
+            left:-150!important;
+        }
+    }
+    @media screen and (min-width: 1251px) and (max-width: 1351px) {  
+        .home-botao-1{
+            position: relative;
+            left: -336px !important;
+        }
+    }
+    @media screen and (min-width: 1352px) and (max-width: 1453px) {  
+        .home-botao-1{
+            position: relative;
+            left: -369px !important;
+        }
+    }
+    @media screen and (min-width: 1454px) and (max-width: 1555px) {  
+        .home-botao-1{
+            position: relative;
+            left: -370px !important;
+        }
+    }
+    
+
+
+
+
+    
