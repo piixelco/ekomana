@@ -1,0 +1,134 @@
+/* Estilos gerais para o container de cada imagem */
+.image-container {
+    position: relative; /* Permite posicionar elementos filhos de forma absoluta */
+    border-radius: 20px; /* Arredonda as bordas do container */
+    display: inline-block; /* Permite que os containers fiquem lado a lado */
+    width: 350px; /* Largura inicial do container */
+    height: 500px; /* Altura proporcional à largura inicial */
+    overflow: hidden; /* Impede que elementos transbordem do container */
+    box-sizing: border-box; /* Inclui padding e borda no tamanho total */
+}
+
+/* Estilos para o link que envolve a imagem */
+.image-container a {
+    display: block; /* O link ocupa todo o espaço do container */
+    width: 100%; /* A largura do link é igual à largura do container */
+    height: 100%; /* A altura do link é igual à altura do container */
+    position: relative; /* Permite posicionar elementos filhos */
+    text-decoration: none; /* Remove sublinhados do link */
+    color: inherit; /* Mantém a cor do texto como herdada do tema */
+}
+
+/* Estilos para a imagem dentro do container */
+.image-container img {
+    width: 100%; /* A imagem ocupa toda a largura do container */
+    height: 100%; /* A imagem ocupa toda a altura do container */
+    object-fit: cover; /* Ajusta a imagem para preencher o container sem distorção */
+    transition: transform 0.4s ease; /* Adiciona uma transição suave ao hover */
+}
+
+/* Efeito de zoom ao passar o mouse sobre a imagem */
+.image-container:hover img {
+    transform: scale(1.1); /* Amplia a imagem levemente */
+}
+
+/* Estilos para a caixa de texto sobreposta à imagem */
+.text-box {
+    position: absolute; /* Posiciona a caixa de texto sobre a imagem */
+    bottom: 0; /* Alinha a caixa na parte inferior do container */
+    left: 0; /* Alinha a caixa no lado esquerdo do container */
+    height: 50px; /* Define a altura da caixa de texto */
+    width: 100%; /* A caixa cobre toda a largura do container */
+    padding: 10px; /* Adiciona espaçamento interno */
+    color: white; /* Define a cor do texto como branca */
+    background-color: rgba(0, 0, 0, 0.7); /* Aplica um fundo semitransparente */
+    font-size: 16px; /* Define o tamanho padrão do texto */
+    text-align: center; /* Centraliza o texto na caixa */
+    display: flex; /* Usa flexbox para organizar o conteúdo */
+    flex-direction: column; /* Organiza o conteúdo verticalmente */
+    justify-content: center; /* Centraliza verticalmente os elementos */
+    box-sizing: border-box; /* Inclui padding na largura/altura total */
+    overflow: hidden; /* Impede que o texto extra transborde */
+}
+
+/* Estilos específicos para o título dentro da caixa de texto */
+.titulo {
+    margin: 0 0 5px 0; /* Adiciona espaçamento inferior ao título */
+    font-family: 'Reenie Beanie', cursive; /* Define uma fonte cursiva para o título */
+    font-size: 24px; /* Define o tamanho do título */
+    color: white; /* Define a cor do título */
+}
+
+/* Estilos para o texto descritivo dentro da caixa de texto */
+.text-box p {
+    margin: 0; /* Remove margens do parágrafo */
+    font-size: 14px; /* Define o tamanho do texto descritivo */
+    color: #FFF3DA; /* Define a cor do texto em um tom claro */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilos para as cores das caixas de texto específicas */
+.box-1 { background-color: rgba(204, 54, 54, 0.8); } /* Fundo vermelho translúcido */
+.box-2 { background-color: rgba(54, 126, 24, 0.7); } /* Fundo verde translúcido */
+.box-3 { background-color: rgba(204, 54, 54, 0.8); } /* Fundo vermelho translúcido */
+
+/* Estilos responsivos para diferentes tamanhos de tela */
+
+/* Ajusta a largura e altura do container para telas médias */
+@media (max-width: 1024px) {
+    .image-container {
+        width: 280px; /* Reduz a largura do container */
+        height: 400px; /* Reduz a altura proporcionalmente */
+    }
+}
+
+/* Ajusta a largura e altura do container para telas menores */
+@media (max-width: 768px) {
+    .image-container {
+        width: 220px; /* Reduz ainda mais a largura do container */
+        height: 375px; /* Reduz a altura proporcionalmente */
+    }
+}
+
+/* Ajusta a largura e altura do container para dispositivos móveis */
+@media (max-width: 480px) {
+    .image-wrapper {
+        justify-content: space-between; /* Ajusta o espaçamento entre os containers */
+    }
+    .image-container {
+        width: 150px; /* Define uma largura menor para dispositivos móveis */
+        height: 250px; /* Define uma altura menor proporcional */
+    }
+}
+
+
+<div class="image-container">
+    <a href="https://wa.me/5511940317120?text=Ol%C3%A1%2C%20quero%20fazer%20parte%20da%20Ek%C3%B3%20Man%C3%A3.%20Poderia%20me%20dar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank">
+        <img src="https://ekomana.earth/wp-content/uploads/2024/12/vivencia.png" alt="">
+        <div class="text-box box-1">
+            <span class="titulo">Compartilhe Seus Dons</span>
+            
+        </div>
+    </a>
+</div>
+<div class="image-container">
+    <a href="https://wa.me/5511940317120?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20contribuir%20com%20a%20Ek%C3%B3%20Man%C3%A3.%20Poderia%20me%20dar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank">
+        <img src="https://ekomana.earth/wp-content/uploads/2024/12/cuidados.png" alt="">
+        <div class="text-box box-2">
+            <span class="titulo">Contribua Financeiramente</span>
+
+        </div>
+    </a>
+</div>
+<div class="image-container">
+    <a href="https://ekomana.earth/faca-parte/" target="_blank">
+        <img src="https://ekomana.earth/wp-content/uploads/2024/12/encontros-1.png" alt="">
+        <div class="text-box box-3">
+            <span class="titulo">Divulgue Nossa Causa</span>
+            
+        </div>
+    </a>
+</div>
+</body>
+
+</script>
